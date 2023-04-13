@@ -1,0 +1,9 @@
+{{-- @if(name)
+<h1>This is {{name}}'s page<h1>
+@else
+<h1>This is about page</h1>
+@endif --}}
+
+<h1>
+    {{ name ? `this is ${ name }'s page` : 'This is about page' }}
+</h1>
